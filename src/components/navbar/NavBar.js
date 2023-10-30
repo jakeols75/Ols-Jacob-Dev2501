@@ -18,6 +18,7 @@ const styles = {
     backgroundColor: "#94D8FF",
     alignItems: "center",
     width: "100%",
-    height: "100%",
+    height: "650px",
+    paddingBottom: "20px",
   },
 };

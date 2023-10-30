@@ -9,7 +9,7 @@ import NavBar from "./components/navbar/NavBar";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={styles.appContainer}>
         <div>
           <Header />
         </div>
@@ -32,4 +32,5 @@ const styles = {
     placeContent: "center",
     margin: "auto",
   },
+  appContainer: {},
 };

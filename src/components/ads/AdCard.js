@@ -17,6 +17,7 @@ const styles = {
     backgroundColor: "gray",
     marginBottom: "5px",
     borderStyle: "solid",
+    paddingTop: "20px",
   },
   cardImg: {
     height: "100px",
