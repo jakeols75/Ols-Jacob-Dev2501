@@ -25,3 +25,7 @@ Website Logo for header component
 ## Navagation Bar Componenet
 
 Navigation bar is on the left side and holds the buttons for Newsfeed, Messages, and Watch
+
+## PostCard component
+
+The post card component is used to diplay, edit, or delete post that were created.
