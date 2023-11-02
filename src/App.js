@@ -12,22 +12,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
+        {/* <div> */}
           <Header />
-        </div>
+        {/* </div> */}
         <div style={styles.pageLayout}>
           <NavBar />
           <div>
-            <div>
+            {/* <div> */}
               <FormPost />
-            </div>
-            <div>
+            {/* </div> */}
+            {/* <div> */}
               <PostCard />
             </div>
           </div>
           <AdForm />
         </div>
-      </div>
+      // </div>
     );
   }
 }
@@ -37,8 +37,9 @@ export default App;
 const styles = {
   pageLayout: {
     display: "flex",
-    flexDirection: "coloumn",
-    placeContent: "center",
-    margin: "auto",
+    flexDirection: "row",
+    // placeContent: "center",
+    justifyContent: "space-between",
+    // margin: "auto",
   },
 };
