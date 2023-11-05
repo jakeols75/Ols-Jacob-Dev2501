@@ -1,21 +1,25 @@
 import React from "react";
-//import My Avatar
-import MyAvatar from "../avatar/MyAvatar";
-import AvatarIcon from "../../images/avatarImage.jpeg";
+
 //Import icons for Post Card
 import { GrClose, GrFormEdit } from "react-icons/gr";
+import MyAvatar from "../avatar/MyAvatar";
+import AvatarIcon from "../../images/avatarImage.jpeg";
 
 const PostCard = (props) => {
   return (
     <div style={styles.postContainer}>
       <MyAvatar AvatarIcon={AvatarIcon} />
       <div>
-        <h3 style={styles.titlePost}>Social Media Web App</h3>
-        <p>Create Thinking is my first social media platform adventure.</p>
+        <h3 style={styles.titlePost}>{props.val.postTitle}</h3>
+        <p>{props.val.postBody}</p>
       </div>
       <div style={styles.buttonStyle}>
-        <GrClose />
-        <GrFormEdit />
+        <button>
+          <GrClose />
+        </button>
+        <button>
+          <GrFormEdit />
+        </button>
       </div>
     </div>
   );
@@ -48,5 +52,8 @@ const styles = {
   },
   postBody: {
     fontSize: "1rem",
+  },
+  postImg: {
+    width: "2.5rem",
   },
 };

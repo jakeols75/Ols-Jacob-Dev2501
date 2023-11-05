@@ -7,9 +7,34 @@ import AdForm from "./components/ads/AdForm";
 import NavBar from "./components/navbar/NavBar";
 //import PostCard
 import PostCard from "./components/form/PostCard";
+//Import avatar Image
+import AvatarIcon from "../src/images/avatarImage.jpeg";
 
 class App extends Component {
+  state = {
+    postList: [],
+  };
+
+  getInput = (e) => {
+    this.setState({ postTitle: e.target.value });
+    this.setState({ postBody: e.target.value });
+  };
+
+  addItem = (e) => {
+    e.preventDefault();
+    this.setState({
+      postList: [
+        ...this.state.postList,
+        { postTitle: this.state.postTitle, postBody: this.state.postBody },
+      ],
+    });
+    e.target.reset();
+  };
+
   render() {
+    let postCardList = this.state.postList.map((element, i) => {
+      return <PostCard key={i} val={element} />;
+    });
     return (
       <div className="App">
         <div>
@@ -19,11 +44,9 @@ class App extends Component {
           <NavBar />
           <div>
             <div>
-              <FormPost />
+              <FormPost getInput={this.getInput} addItem={this.addItem} />
             </div>
-            <div>
-              <PostCard />
-            </div>
+            <div>{postCardList}</div>
           </div>
           <AdForm />
         </div>

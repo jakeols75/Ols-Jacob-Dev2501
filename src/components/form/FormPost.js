@@ -9,17 +9,27 @@ const FormPost = (props) => {
   return (
     <section style={styles.formStyle}>
       <MyAvatar AvatarIcon={AvatarIcon} />
-      <form>
-        <input type="text" placeholder="Title" style={styles.formTitle} />
+      <form onSubmit={props.addItem}>
         <input
+          name="postTitle"
+          value={props.postTitle}
+          onChange={props.getInput}
+          type="text"
+          placeholder="Title"
+          style={styles.formTitle}
+        />
+        <input
+          name="postBody"
+          value={props.postBody}
+          onChange={props.getInput}
           type="text"
           placeholder="What would You like to Create?"
           style={styles.formElement}
         />
+        <div style={styles.btnContainer}>
+          <MyButton btnText="Post" />
+        </div>
       </form>
-      <div style={styles.btnContainer}>
-        <MyButton btnText="Post" />
-      </div>
     </section>
   );
 };
