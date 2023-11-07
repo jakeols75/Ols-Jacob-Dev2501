@@ -12,14 +12,29 @@ import AvatarIcon from "../src/images/avatarImage.jpeg";
 
 class App extends Component {
   state = {
-    postList: [],
+    postList: [
+      {
+        postTitle: "This is my first post!",
+        postBody: "This new socail media site is going to be the best!",
+      },
+    ],
+    color: "black",
   };
-
-  getInput = (e) => {
+  //LifeCycle Methods::
+  componentDidMount() {
+    console.log("ComponentDidMount");
+    setTimeout(() => {
+      this.setState({ color: "green" });
+    }, 5000);
+  }
+  //Get data from the formpost to store in data binding
+  getTitleInput = (e) => {
     this.setState({ postTitle: e.target.value });
+  };
+  getBodyInput = (e) => {
     this.setState({ postBody: e.target.value });
   };
-
+  //Add feaute to Create postCard with data from the getInput function
   addItem = (e) => {
     e.preventDefault();
     this.setState({
@@ -28,12 +43,25 @@ class App extends Component {
         { postTitle: this.state.postTitle, postBody: this.state.postBody },
       ],
     });
+
     e.target.reset();
+  };
+  //Delete post created
+  removePost = (key) => {
+    const newPostList = this.state.postList.filter((post) => post !== key);
+    this.setState(() => ({ postList: newPostList }));
   };
 
   render() {
+    //Stores data into the postList array
     let postCardList = this.state.postList.map((element, i) => {
-      return <PostCard key={i} val={element} />;
+      return (
+        <PostCard
+          key={i}
+          val={element}
+          onDelete={() => this.removePost(element)}
+        />
+      );
     });
     return (
       <div className="App">
@@ -44,7 +72,12 @@ class App extends Component {
           <NavBar />
           <div>
             <div>
-              <FormPost getInput={this.getInput} addItem={this.addItem} />
+              <h4 style={{ color: this.state.color }}>Post Section:</h4>
+              <FormPost
+                getTitleInput={this.getTitleInput}
+                getBodyInput={this.getBodyInput}
+                addItem={this.addItem}
+              />
             </div>
             <div>{postCardList}</div>
           </div>

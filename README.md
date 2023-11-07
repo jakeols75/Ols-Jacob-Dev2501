@@ -1,31 +1,22 @@
-# Component Branch:
+# 02_Components is used to work with C.R.U.D
 
-All Components created will be tracked on this branch.
+creating post
+Reading Post
+Updating Post
+deleting post
 
-## Avatar Component is used to store avatar image and styling
+### ComponentDidMount
 
-Avatar Component is used to display the avatar of the user on the webpage
+is used to change the h3 tag from black to green after 5 seconds
 
-## Button Component
+### getInput functions
 
-Button components are created for the navagation bar, post form, and to delete post
+used to store the value of what the user typed into the post field
 
-## Form Component
+### addItem
 
-Form component is used for the user to create post and view post that have already been created.
+used to create and add post to the page after the user types out the values in the title and body field.
 
-## Header Component
+### removeItem
 
-Header compoent allows the user to view the logo for the website, use the search bar, and see their avatar with the settings tab.
-
-## Logo Component
-
-Website Logo for header component
-
-## Navagation Bar Componenet
-
-Navigation bar is on the left side and holds the buttons for Newsfeed, Messages, and Watch
-
-## PostCard component
-
-The post card component is used to diplay, edit, or delete post that were created.
+used for delete post the user created

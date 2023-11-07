@@ -15,7 +15,7 @@ const PostCard = (props) => {
       </div>
       <div style={styles.buttonStyle}>
         <button>
-          <GrClose />
+          <GrClose onClick={props.onDelete} />
         </button>
         <button>
           <GrFormEdit />

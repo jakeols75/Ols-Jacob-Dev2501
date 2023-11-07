@@ -13,7 +13,7 @@ const FormPost = (props) => {
         <input
           name="postTitle"
           value={props.postTitle}
-          onChange={props.getInput}
+          onChange={props.getTitleInput}
           type="text"
           placeholder="Title"
           style={styles.formTitle}
@@ -21,7 +21,7 @@ const FormPost = (props) => {
         <input
           name="postBody"
           value={props.postBody}
-          onChange={props.getInput}
+          onChange={props.getBodyInput}
           type="text"
           placeholder="What would You like to Create?"
           style={styles.formElement}
