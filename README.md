@@ -11,4 +11,10 @@
 -Logo
 -Header
 
-## Dev branch is used for my working branch through this month.
+## Dev branch
+
+- Is used for my working branch through this month.
+
+## 02_Componets branch
+
+- Used to create and work with CRUD method
