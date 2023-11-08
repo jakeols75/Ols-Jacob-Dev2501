@@ -8,7 +8,7 @@ import NavBar from "./components/navbar/NavBar";
 //import PostCard
 import PostCard from "./components/form/PostCard";
 //Import avatar Image
-import AvatarIcon from "../src/images/avatarImage.jpeg";
+// import AvatarIcon from "../src/images/avatarImage.jpeg";
 
 class App extends Component {
   state = {

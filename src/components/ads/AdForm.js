@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 //Import Ad card
 import AdCard from "./AdCard";
 import oculusImg from "../../images/oculus.jpg";
