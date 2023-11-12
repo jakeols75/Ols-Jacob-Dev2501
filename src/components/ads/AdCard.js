@@ -24,7 +24,6 @@ const styles = {
     width: "150px",
     justifyContent: "center",
     items: "center",
-    margin: "auto",
     margin: "5px",
   },
   textStyle: {

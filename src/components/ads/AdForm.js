@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 //Import Ad card
 import AdCard from "./AdCard";
 import oculusImg from "../../images/oculus.jpg";
@@ -33,6 +32,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     width: "100%",
+    height: "100%",
     backgroundColor: "#94D8FF",
     alignItems: "center",
     margin: "auto",
