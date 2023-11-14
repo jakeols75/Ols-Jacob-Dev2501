@@ -11,7 +11,7 @@ import PostCard from "../components/form/PostCard";
 //Nav paths
 import DashBoard from "../pages/DashBoard";
 import Messages from "../pages/Messages";
-//import settings from "../pages/Settings";
+import Settings from "../pages/Settings";
 
 class NewsFeed extends Component {
   state = {
@@ -78,6 +78,7 @@ class NewsFeed extends Component {
               <Route path="dashboard" element={<DashBoard />} />
               <Route path="newsfeed" element={<NewsFeed />} />
               <Route path="messages" element={<Messages />} />
+              <Route path="settings" element={<Settings />} />
             </Routes>
           </section>
           <div>

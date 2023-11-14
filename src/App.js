@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 //Nav paths
 import DashBoard from "../src/pages/DashBoard";
 import Messages from "../src/pages/Messages";
-//import settings from "../src/pages/Settings";
+import Settings from "../src/pages/Settings";
 
 import NewsFeed from "./pages/NewsFeed";
 
@@ -24,6 +24,7 @@ class App extends Component {
           <Route path="dashboard" element={<DashBoard />} />
           <Route path="newsfeed" element={<NewsFeed />} />
           <Route path="messages" element={<Messages />} />
+          <Route path="settings" element={<Settings />} />
         </Routes>
       </div>
     );
