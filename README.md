@@ -20,3 +20,16 @@ used to create and add post to the page after the user types out the values in t
 ### removeItem
 
 used for delete post the user created
+
+### Added pages folder::
+
+-DashBoard
+-Messages
+-NewsFeed
+-Settings
+--View pages added
+
+## Added Charts to dashboard
+
+-Styling added
+-Charts display like and ad revenue data
