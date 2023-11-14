@@ -23,9 +23,10 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#94D8FF",
+    justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: "650px",
+
     paddingBottom: "20px",
   },
   linkStyle: {
