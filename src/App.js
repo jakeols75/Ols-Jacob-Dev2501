@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 //Header Component
-//import Header from "./components/header/Header";
+import Header from "./components/header/Header";
 //import FormPost from "./components/form/FormPost";
 //import AdForm from "./components/ads/AdForm";
 //import NavBar for Left Side
-//import NavBar from "./components/navbar/NavBar";
+import NavBar from "./components/navbar/NavBar";
 //import PostCard
 //import PostCard from "./components/form/PostCard";
 //Nav paths
@@ -19,6 +19,10 @@ class App extends Component {
   render() {
     return (
       <div style={styles.pageLayout}>
+        <div>
+          <Header />
+          <NavBar />
+        </div>
         <Routes>
           <Route path="/" element={<NewsFeed />} />
           <Route path="dashboard" element={<DashBoard />} />

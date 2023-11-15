@@ -5,11 +5,7 @@ import NavBar from "../components/navbar/NavBar";
 function Settings() {
   return (
     <section>
-      <div>
-        <Header />
-        <NavBar />
-      </div>
-      <h1>Settings:</h1>;
+      <h1>Settings:</h1>
     </section>
   );
 }

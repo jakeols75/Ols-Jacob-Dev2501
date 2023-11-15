@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import ChartPie from "../components/charts/ChartPie";
 import ChartMedium from "../components/charts/ChartMedium";
-import Header from "../components/header/Header";
-import NavBar from "../components/navbar/NavBar";
+// import Header from "../components/header/Header";
+// import NavBar from "../components/navbar/NavBar";
 
 function DashBoard() {
   const [chartPies] = useState([{ chartHeader: "Likes Overview" }]);
   const [chartMed] = useState([{ chartHeader: "Ad Revinue earned" }]);
   return (
     <section style={styles.pageDisplay}>
-      <div>
+      {/* <div>
         <Header />
         <NavBar style={styles.navBarStyle} />
-      </div>
+      </div> */}
       <h1>DashBoard:</h1>
       <div style={styles.chartDiv}>
         <p>
