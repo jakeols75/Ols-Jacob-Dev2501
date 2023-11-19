@@ -8,7 +8,7 @@ export default NavBtn;
 const styles = {
   navBtnStyle: {
     fontWeight: "bold",
-    backgroundColor: "#DAD7CD",
+    backgroundColor: "#6b8c7e",
     width: "100px",
     height: "40px",
     marginTop: "13px",

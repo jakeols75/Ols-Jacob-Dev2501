@@ -44,7 +44,10 @@ const styles = {
     justifyContent: "space-between",
     width: "75%",
     height: "100%",
-    alignItems: "center",
+    alignItems: "start",
+    border: "solid",
+    borderRadius: "5px",
+    marginLeft: "7%",
   },
   formElement: {
     width: "500px",
@@ -52,7 +55,6 @@ const styles = {
     borderRadius: "5px",
     marginTop: "15px",
     marginBottom: "5px",
-    marginRight: "5px",
   },
   formTitle: {
     width: "500px",
@@ -60,7 +62,7 @@ const styles = {
     marginTop: "5px",
   },
   btnContainer: {
-    marginTop: "80px",
-    marginRight: "10px",
+    marginTop: "20px",
+    marginBottom: "10px",
   },
 };

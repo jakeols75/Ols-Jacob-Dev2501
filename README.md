@@ -1,35 +1,21 @@
-# 02_Components is used to work with C.R.U.D
+# 04_API Branch
 
-creating post
-Reading Post
-Updating Post
-deleting post
+## Added randomuser API
 
-### ComponentDidMount
+-First Name
+-Last Name
+-Email
+-Street Number
+-City
+-State
+-Postal Code
+-Phone Number
 
-is used to change the h3 tag from black to green after 5 seconds
+## Updated styling
 
-### getInput functions
+-Changed Colors scheme
+-Adjusted size of components
 
-used to store the value of what the user typed into the post field
+## Added link to settings button in header
 
-### addItem
-
-used to create and add post to the page after the user types out the values in the title and body field.
-
-### removeItem
-
-used for delete post the user created
-
-### Added pages folder::
-
--DashBoard
--Messages
--NewsFeed
--Settings
---View pages added
-
-## Added Charts to dashboard
-
--Styling added
--Charts display like and ad revenue data
+-View user profile

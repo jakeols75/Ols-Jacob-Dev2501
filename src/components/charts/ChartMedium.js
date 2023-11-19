@@ -83,7 +83,7 @@ const styles = {
   chartMedStyle: {
     border: "solid",
     borderRadius: "10px",
-    backgroundColor: "#94eaff",
+    backgroundColor: "#ffffff",
     color: "black",
     paddingTop: "3px",
   },

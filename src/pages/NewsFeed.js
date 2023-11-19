@@ -1,17 +1,7 @@
 import React, { Component } from "react";
-import { Routes, Route } from "react-router-dom";
-//Header Component
-import Header from "../components/header/Header";
 import FormPost from "../components/form/FormPost";
-import AdForm from "../components/ads/AdForm";
-//import NavBar for Left Side
-import NavBar from "../components/navbar/NavBar";
 //import PostCard
 import PostCard from "../components/form/PostCard";
-//Nav paths
-import DashBoard from "../pages/DashBoard";
-import Messages from "../pages/Messages";
-import Settings from "../pages/Settings";
 
 class NewsFeed extends Component {
   state = {
@@ -68,19 +58,7 @@ class NewsFeed extends Component {
     });
     return (
       <div className="NewsFeed">
-        <div>
-          <Header />
-        </div>
         <div style={styles.pageLayout}>
-          <NavBar />
-          <section>
-            <Routes>
-              <Route path="dashboard" element={<DashBoard />} />
-              <Route path="newsfeed" element={<NewsFeed />} />
-              <Route path="messages" element={<Messages />} />
-              <Route path="settings" element={<Settings />} />
-            </Routes>
-          </section>
           <div>
             <div>
               <h4 style={{ color: this.state.color }}>Post Section:</h4>
@@ -90,9 +68,8 @@ class NewsFeed extends Component {
                 addItem={this.addItem}
               />
             </div>
-            <div>{postCardList}</div>
+            <div style={styles.postCardStyle}>{postCardList}</div>
           </div>
-          <AdForm />
         </div>
       </div>
     );
@@ -105,7 +82,13 @@ const styles = {
   pageLayout: {
     display: "flex",
     flexDirection: "coloumn",
-    placeContent: "center",
+    justifyContent: "center",
+    alignItems: "center",
     margin: "auto",
+  },
+  postCardStyle: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 };

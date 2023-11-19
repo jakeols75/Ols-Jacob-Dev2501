@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const NavBar = (props) => {
   return (
     <nav style={styles.navStyle}>
-      <Link to="/DashBoard" style={styles.linkStyle}>
+      <Link to="/" style={styles.linkStyle}>
         DashBoard
       </Link>
       <Link to="/Newsfeed" style={styles.linkStyle}>
@@ -21,13 +21,12 @@ export default NavBar;
 const styles = {
   navStyle: {
     display: "flex",
-    flexDirection: "column",
-    backgroundColor: "#94D8FF",
-    justifyContent: "center",
-    alignItems: "center",
+    flexDirection: "row",
+    backgroundColor: "#019155",
+    justifyContent: "start",
+    alignItems: "start",
     width: "100%",
-
-    paddingBottom: "20px",
+    paddingBottom: "10px",
   },
   linkStyle: {
     fontSize: "1.3rem",
@@ -36,7 +35,7 @@ const styles = {
     margin: "3px",
     border: "solid",
     padding: "3px",
-    backgroundColor: "#55c2da",
+    backgroundColor: "#6b8c7e",
     borderRadius: "5px",
     fontWeight: "bold",
   },

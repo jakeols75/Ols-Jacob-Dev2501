@@ -60,8 +60,7 @@ const styles = {
   pieChartStyle: {
     border: "solid",
     borderRadius: "10px",
-    backgroundColor: "#94eaff",
+    backgroundColor: "#ffffff",
     color: "black",
-    paddingBottom: "5px",
   },
 };

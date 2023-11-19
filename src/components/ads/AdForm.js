@@ -31,10 +31,11 @@ const styles = {
   formStyle: {
     display: "flex",
     flexDirection: "column",
+    gap: "10px",
     width: "100%",
-    height: "100%",
-    backgroundColor: "#94D8FF",
+    backgroundColor: "#dedede",
+    justifyContent: "center",
     alignItems: "center",
-    margin: "auto",
+    paddingTop: "5px",
   },
 };

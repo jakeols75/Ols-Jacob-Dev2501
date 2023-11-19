@@ -29,19 +29,21 @@ export default PostCard;
 const styles = {
   postContainer: {
     display: "flex",
-    width: "75%",
+    width: "50%",
     height: "100%",
     border: "solid",
+    borderRadius: "5px",
     justifyContent: "space-between",
-    alignItems: "center",
-    margin: "auto",
-    marginTop: "20%",
+    alignItems: "start",
+    marginTop: "25px",
     padding: "5%",
+    marginLeft: "3%",
+    backgroundColor: "#FFFFFF",
   },
   buttonStyle: {
     marginBottom: "50px",
     marginLeft: "10px",
-    alignItems: "start",
+    alignItems: "end",
   },
   titlePost: {
     border: "solid",

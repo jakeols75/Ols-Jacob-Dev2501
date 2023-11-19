@@ -1,14 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 const MyAvatar = (props) => {
   return (
-    <Link to="/settings">
-      <img
-        src={props.AvatarIcon}
-        alt={props.AvatarAlt}
-        style={styles.myAvatar}
-      />
-    </Link>
+    <img src={props.AvatarIcon} alt={props.AvatarAlt} style={styles.myAvatar} />
   );
 };
 export default MyAvatar;

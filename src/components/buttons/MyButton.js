@@ -15,7 +15,7 @@ const styles = {
     fontWeight: "bold",
     fontSize: ".9rem",
     borderRadius: "5px",
-    backgroundColor: "#94D8FF",
+    backgroundColor: "#6b8c7e",
     width: "80px",
     height: "25px",
     cursor: "pointer",
