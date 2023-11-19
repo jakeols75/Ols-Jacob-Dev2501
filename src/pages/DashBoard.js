@@ -4,7 +4,7 @@ import ChartMedium from "../components/charts/ChartMedium";
 
 function DashBoard() {
   const [chartPies] = useState([{ chartHeader: "Likes Overview" }]);
-  const [chartMed] = useState([{ chartHeader: "Ad Revinue earned" }]);
+  const [chartMed] = useState([{ chartHeader: "Ad Revenue Earned" }]);
   return (
     <section style={styles.pageDisplay}>
       <h1>DashBoard:</h1>

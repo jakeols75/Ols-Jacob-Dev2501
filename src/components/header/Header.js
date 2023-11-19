@@ -26,7 +26,9 @@ const Header = (props) => {
         <input type="text" style={styles.inputField} placeholder="Search" />
       </div>
       <div style={styles.avatarDisplay}>
-        <MyAvatar AvatarIcon={AvatarIcon} />
+        <Link to="/settings">
+          <MyAvatar AvatarIcon={AvatarIcon} />
+        </Link>
         <button style={styles.settingsButton}>
           <Link to="/settings">
             <FiSettings />
